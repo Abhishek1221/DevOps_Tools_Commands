@@ -1,0 +1,131 @@
+
+1. Initializing a repository:
+   git init
+   - Create a Git repository in a local directory.
+
+2. Cloning a repository:
+   git clone <repository-url>
+   - Copy a remote repository to your local machine.
+
+3. Staging and committing changes:
+   git add <file>
+   git commit -m "commit message"
+   - Track and record file changes.
+
+4. Checking repository status:
+   git status
+   - Show the current state of the working directory and staging area.
+
+5. Creating and switching branches:
+   git checkout -b <branch-name>
+   - Create a new branch and switch to it.
+
+6. Merging branches:
+   git checkout main
+   git merge <branch-name>
+   - Merge changes from another branch into the current branch.
+
+7. Handling merge conflicts:
+   - When two branches modify the same file or line of code, Git will notify you of a merge conflict.
+     You'll need to manually resolve it by editing the conflicting files, adding them, and then committing
+     the resolution.
+
+8. Adding a remote repository:
+   git remote add origin <repository-url>
+   - Add a remote repository URL to your local repo.
+
+9. Pushing changes to a remote repository:
+   git push origin <branch-name>
+   - Push your local changes to the remote repository.
+
+10. Pulling changes from a remote repository:
+    git pull origin <branch-name>
+    - Pull changes from the remote repository and merge them into your local branch.
+
+11. Undoing uncommitted changes:
+    git checkout -- <file>
+    - Revert changes in a file to the last commit.
+
+12. Resetting staged changes:
+    git reset <file>
+    - Unstage a file.
+
+13. Undoing the last commit (but keep changes):
+    git reset --soft HEAD~1
+    - Undo the last commit but keep the changes.
+
+14. Discard the last commit (and discard changes):
+    git reset --hard HEAD~1
+    - Undo the last commit and discard the changes.
+
+15. Rebasing a branch:
+    git checkout <feature-branch>
+    git rebase main
+    - Apply changes from one branch onto another, keeping a linear history.
+
+16. Interactive rebasing:
+    git rebase -i HEAD~<number of commits>
+    - Edit or squash multiple commits into one, modify commit messages, or remove commits.
+
+17. Cherry-picking a commit:
+    git cherry-pick <commit-hash>
+    - Apply the changes from a specific commit onto your current branch.
+
+18. Creating a tag:
+    git tag <tag-name>
+    - Create a new tag.
+
+19. Pushing tags to a remote repository:
+    git push origin <tag-name>
+    - Push tags to the remote repository.
+
+20. Stashing changes:
+    git stash
+    - Temporarily save uncommitted changes for later use.
+
+21. Applying stashed changes:
+    git stash apply
+    - Apply previously stashed changes.
+
+22. Forking a repository and syncing with upstream:
+    git remote add upstream <original-repo-url>
+    git fetch upstream
+    git merge upstream/main
+    - Sync your forked repository with the original repository.
+
+23. Reverting a commit:
+    git revert <commit-hash>
+    - Undo a previous commit by creating a new commit that undoes the changes.
+
+24. Resetting to a previous commit:
+    git reset --hard <commit-hash>
+    - Revert the entire repository to a specific commit, discarding all changes after it.
+
+25. Viewing commit history:
+    git log
+    - View the commit history.
+
+26. Showing commit history for a specific file:
+    git log <file>
+    - Show the commit history of a particular file.
+
+27. Viewing who changed each line in a file:
+    git blame <file>
+    - View who changed each line of the file.
+
+28. Creating a tracking branch (from remote):
+    git checkout --track origin/<branch-name>
+    - Create a tracking branch to follow a remote branch.
+
+29. Squashing multiple commits into one:
+    git rebase -i HEAD~3
+    - Squash the last 3 commits into one.
+
+30. Forking and contributing:
+    - Fork a project on GitHub, make your changes locally, and submit a pull request (PR) to contribute to the original repository.
+
+31. Syncing a forked repo:
+    git fetch upstream
+    git merge upstream/main
+    - Sync your fork with the original repository.
+
